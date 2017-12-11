@@ -35,7 +35,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         BorrowModel borrowModel = borrowModelList.get(position);
         holder.itemTextView.setText(borrowModel.getItemName());
         holder.nameTextView.setText(borrowModel.getPesonName());
-        holder.dateTextView.setText(borrowModel.getBorrowDate().toLocaleString().substring(0, 11));
+        holder.dateTextView.setText(borrowModel.getBorrowDate().toLocaleString().substring(0, 12));
         holder.itemView.setTag(borrowModel);
         holder.itemView.setOnLongClickListener(longClickListener);
     }
